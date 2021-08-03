@@ -17,6 +17,5 @@
 </ul>
 
 <h1>You will install</h1>
-
-    sudo apt install python3 python3-pip make
-
+<h2>Ubuntu</h2>
+    sudo apt install python3 python3-pip make nitrogen ninja-build
