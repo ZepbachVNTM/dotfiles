@@ -17,6 +17,6 @@
 </ul>
 
 <h1>You will install</h1>
-```bash
-sudo apt install python3 python3-pip make
-```
+
+  sudo apt install python3 python3-pip make
+
