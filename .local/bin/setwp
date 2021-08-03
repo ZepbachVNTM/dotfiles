@@ -1,0 +1,23 @@
+#!/bin/bash
+
+[ $EUID -eq 0 ] && echo "Do not run this script as root." && exit 1
+
+l_wploc="$HOME/.local/share/wp"
+wpdir="$HOME/Pictures/wallpapers"
+
+wploc="$(readlink -f "$1")" &&
+case "$(file --mime-type -b "$1")" in
+  image/* )
+    ln -sf "$wploc" "$l_wploc" ;;
+  inode/directory )
+    ln -sf "$(find "$wploc" -iregex '.*.\(png\|jpg\|jpeg\)' -type f | shuf -n 1)" "$l_wploc"
+    notify-send -i "$l_wploc" "Random wallpaper has been changed";;
+  *)
+    notify-send "Error" "Not a valid image!";;
+esac || {
+  [ -z "$1" ] && ln -sf "$(find "$wpdir" -iregex '.*.\(png\|jpg\|jpeg\)' -type f | shuf -n 1)" "$l_wploc"
+}
+
+xwallpaper --zoom "$l_wploc"
+
+exit 0
