@@ -18,5 +18,5 @@
 
 <h1>You will install</h1>
 
-  sudo apt install python3 python3-pip make
+    sudo apt install python3 python3-pip make
 
