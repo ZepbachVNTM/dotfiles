@@ -20,6 +20,6 @@
 
 # Ubuntu
 ```bash
-    sudo apt install python3 python3-pip make nitrogen ninja-build
+sudo apt install python3 python3-pip make nitrogen ninja-build
 ```
 # Arch linux
