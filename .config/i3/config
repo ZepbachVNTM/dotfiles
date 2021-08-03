@@ -8,7 +8,7 @@ new_float normal
 hide_edge_borders none
 
 bindsym $mod+u border none
-bindsym $mod+y border pixel 1
+# bindsym $mod+y border pixel 1
 bindsym $mod+n border normal
 
 font xft:URWGothic-Book 11
@@ -302,6 +302,9 @@ bindsym $mod+c exec --no-startup-id bash ~/.config/i3/lock.sh
 bindsym $mod+Shift+c		        exec --no-startup-id $suspend
 bindsym $mod+Shift+t            focus mode_toggle
 
+# Screenshot
+bindsym $mod+y			            exec --no-startup-id flameshot gui -p ~/Pictures/Screenshots
+bindsym $mod+Shift+y		        exec --no-startup-id flameshot full -p ~/Pictures/Screenshots
 
 # Window borders
 client.focused          #4c7899 #285577 #ffffff #2e9ef4   #abb2bf
