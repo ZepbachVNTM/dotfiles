@@ -16,7 +16,7 @@
 <li><a href="https://archlinux.org/packages/community/x86_64/mate-power-manager">mate-power-manager</a></li>
 </ul>
 
-you will install 
+<h1>You will install</h1>
 ```bash
 sudo apt install python3 python3-pip make
 ```
