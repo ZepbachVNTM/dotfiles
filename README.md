@@ -1,7 +1,7 @@
 # dotfiles
 ![dotfile image](./.github/2021-08-03_09-50.png)
 
-What you will need
+<h1>What you will need</h1>
 <ul>
 <li>Python 3</li>
 <li><a href="https://github.com/Airblader/i3">i3-gaps</a></li>
