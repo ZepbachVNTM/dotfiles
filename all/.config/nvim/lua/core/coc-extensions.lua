@@ -1,0 +1,23 @@
+vim.g.coc_global_extensions = {
+  'coc-snippets',
+  'coc-angular',
+  'coc-clangd',
+  'coc-ccls',
+  'coc-css',
+  'coc-cmake',
+  'coc-emmet',
+  'coc-html',
+  'coc-java',
+  'coc-prettier',
+  'coc-eslint',
+  'coc-dot-complete',
+  'coc-dash-complete',
+  'coc-just-complete',
+  'coc-lsp-wl',
+  'coc-r-lsp',
+  'coc-tsserver',
+  'coc-vimlsp',
+  'coc-pyright',
+  'coc-python',
+  'coc-jedi'
+}

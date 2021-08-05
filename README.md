@@ -1,5 +1,5 @@
 # dotfiles
-![dotfile image](./.github/2021-08-03_09-50.png)
+![dotfile image](./.github/wallpaper.png)
 
 <h1>What you will need</h1>
 <ul>

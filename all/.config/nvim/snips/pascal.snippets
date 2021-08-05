@@ -1,0 +1,111 @@
+# A valid snippet should starts with:
+#
+#		snippet trigger_word [ "description" [ options ] ]
+#
+# and end with:
+#
+#		endsnippet
+#
+# Snippet options:
+#
+#		b - Beginning of line.
+#		i - In-word expansion.
+#		w - Word boundary.
+#		r - Regular expression
+#		e - Custom context snippet
+#		A - Snippet will be triggered automatically, when condition matches.
+#
+# Basic example:
+#
+#		snippet emitter "emitter properties" b
+#		private readonly ${1} = new Emitter<$2>()
+#		public readonly ${1/^_(.*)/$1/}: Event<$2> = this.$1.event
+#		endsnippet
+#
+# Online reference: https://github.com/SirVer/ultisnips/blob/master/doc/UltiSnips.txt
+
+snippet program "Description" b
+program $1;
+endsnippet
+
+snippet uses "Library declaration" b
+uses ${1|crt|};
+endsnippet
+
+snippet var "Description" b
+var $1;
+endsnippet
+
+snippet :integer "Description" i
+integer
+endsnippet
+
+snippet :string "Description" i
+string
+endsnippet
+
+snippet :real "Description" i
+real
+endsnippet
+
+snippet :char "Description" i
+char
+endsnippet
+
+snippet Function "Description" b
+Function $1 :${2|integer,real,char,string|};
+begin
+	$3
+end;
+endsnippet
+
+snippet begin end "Description" b
+begin
+	$1
+end.
+endsnippet
+
+snippet assign "Description" b
+assign(${1:var}, ${1:file});
+endsnippet
+
+snippet while do "Description" b
+while $1 do
+begin
+	$2
+end;
+endsnippet
+
+snippet clrscr; "Clear all text in terminal" b
+clrscr;
+endsnippet
+
+snippet write() "Description" b
+write($1);
+endsnippet
+
+snippet writeln() "Description" b
+writeln($1);
+endsnippet
+
+snippet read "Description" b
+read($1);
+endsnippet
+
+snippet readln() "Description" b
+readln($1);
+endsnippet
+
+snippet repeat until "Description" b
+repeat
+	$1
+until $2;
+endsnippet
+
+snippet for to do "Description" b
+for $1 to $2 do $3;
+endsnippet
+
+snippet for downto do "Description" b
+for $1 downto $2 do $3;
+endsnippet
