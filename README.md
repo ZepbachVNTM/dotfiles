@@ -32,8 +32,10 @@ autotilling
 yay -S autotiling   # AUR only
 ```
 
+
 ## Installing
 You will need `git` and GNU `stow`
+
 Clone into your `$HOME` directory or `~`
 
 ```bash
