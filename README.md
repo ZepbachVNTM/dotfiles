@@ -18,8 +18,27 @@
 
 <h1>You will install</h1>
 
-# Ubuntu
+## Ubuntu
 ```bash
 sudo apt install python3 python3-pip make nitrogen ninja-build
 ```
-# Arch linux
+## Arch linux
+uploading...
+
+## Installing
+You will need `git` and GNU `stow`
+Clone into your `$HOME` directory or `~`
+
+```bash
+git clone https://github.com/ZepbachVNTM/dotfiles.git ~
+```
+
+Run `stow` to symlink everything or just select what you want
+
+```bash
+stow all # Everything
+```
+
+```bash
+stow theme\ i3 # Just my i3 config
+```
