@@ -20,7 +20,7 @@
 
 ## Ubuntu
 ```bash
-sudo apt install python3 python3-pip make nitrogen ninja-build
+sudo apt install i3 i3-gaps i3blocks i3status polybar python3 python3-pip make nitrogen ninja-build
 ```
 ## Arch linux
 ```bash
