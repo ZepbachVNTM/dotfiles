@@ -53,4 +53,4 @@ stow theme\ i3 # Just my i3 config
 ```
 
 ## Attention
-<b style="color: red">Attention: background directory is not configurable</b>
+<b style="color: red">Attention: backgrounds directory is not configurable</b>
