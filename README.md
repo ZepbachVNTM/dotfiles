@@ -23,7 +23,14 @@
 sudo apt install python3 python3-pip make nitrogen ninja-build
 ```
 ## Arch linux
-uploading...
+```bash
+sudo pacman -S i3 i3-gaps i3status i3lock xorg-xset xorg-xrandr
+```
+
+autotilling
+```bash
+yay -S autotiling   # AUR only
+```
 
 ## Installing
 You will need `git` and GNU `stow`
