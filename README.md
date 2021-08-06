@@ -54,3 +54,18 @@ stow theme\ i3 # Just my i3 config
 
 ## Attention
 <b style="color: red">Attention: backgrounds directory is not configurable</b>
+
+
+## Neovim
+if you can't use system clipboard. Please download this
+
+### Ubuntu
+```bash
+sudo apt-get install xclip
+```
+
+
+### Arch linux
+```bash
+pacman -S xclip
+```
