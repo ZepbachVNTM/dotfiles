@@ -1,9 +1,9 @@
 {
   "pairs.enableCharacters": ["(", "[", "{", "'", "\"", "`"],
+  "snippets.userSnippetsDirectory": "~/.config/nvim/snips",
   "suggest.noselect": false,
   "coc.preferences.formatOnSaveFiletypes": [
     "javascript",
-    "typescript",
     "typescript",
     "typescriptreact",
     "json",
@@ -15,7 +15,7 @@
   ],
   "suggest.completionItemKindLabels": {
     "method": "  ",
-    "function": "  ",
+    "function": "  ",
     "variable": "[]",
     "field": "  ",
     "typeParameter": "<>",
@@ -39,16 +39,6 @@
     "constructor": "  ",
     "value": "  ",
     "enumMember": "  "
-  },
-  "languageserver": {
-    "ccls": {
-      "command": "ccls",
-      "trace.server": "verbose",
-      "initializationOptions": {
-        "cacheDirectory": "/tmp/ccls"
-      },
-      "filetypes": ["c", "cpp", "objc", "objcpp"]
-    }
   },
   "cSpell.enabledLanguageIds": [
     "asciidoc",
@@ -85,8 +75,7 @@
     "yaml",
     "yml"
   ],
-  "clangd.path": "/home/zepbachvntm/.config/coc/extensions/coc-clangd-data/install/12.0.0/clangd_12.0.0/bin/clangd",
-  "snippets.userSnippetsDirectory": "~/.config/nvim/snips",
+  "clangd.path": "/home/zepbachvntm/.config/coc/extensions/coc-clangd-data/install/12.0.1/clangd_12.0.1/bin/clangd",
   "jedi.executable.command": "jedi-language-server",
   "jedi.enable": true,
   "snippets.ultisnips.usePythonx": false

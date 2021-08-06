@@ -18,10 +18,3 @@ require('core.whichkey')
 require('core.coc-extensions')
 require('core.nvim-tree')
 require('core.codi')
-
--- LSP
---[[ require('lsp')
-require('lsp.lua-ls')
-require('lsp.python-ls')
-require('lsp.js-ts-ls') ]]
--- require('lsp.efm-general-ls') 

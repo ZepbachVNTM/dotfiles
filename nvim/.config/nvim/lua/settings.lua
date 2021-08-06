@@ -5,6 +5,7 @@ dashboard_themes = chika
 
 zvim.colorschemes = 'onedark'
 zvim.leader = ' '
+zvim.systemclipboard = true
 o.hlsearch = false
 o.number = true
 o.timeoutlen=200

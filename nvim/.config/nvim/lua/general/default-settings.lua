@@ -1,6 +1,7 @@
 zvim = {
   colorschemes = "onedark",
   leader = "space",
+  systemclipboard = false
 }
 local o = vim.o
 local opt = vim.opt
@@ -9,8 +10,12 @@ DATA_PATH = vim.fn.stdpath('data')
 CACHE = vim.fn.stdpath('cache')
 
 o.hidden = true
-o.clipboard = 'unnamedplus'
--- o.mouse = 'a'
+if zvim.systemclipboard == true then
+  o.clipboard = 'unnamedplus'
+else
+  o.clipboard = ''
+end
+o.mouse = 'a'
 o.expandtab = true
 o.tabstop = 2
 o.shiftwidth = 2

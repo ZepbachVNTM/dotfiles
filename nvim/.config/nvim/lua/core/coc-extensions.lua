@@ -19,5 +19,6 @@ vim.g.coc_global_extensions = {
   'coc-vimlsp',
   'coc-pyright',
   'coc-python',
-  'coc-jedi'
+  'coc-jedi',
+  'coc-cfn-lint'
 }
