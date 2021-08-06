@@ -59,7 +59,7 @@ stow theme\ i3 # Just my i3 config
 <li><a href="#neovim">Neovim</a></li>
 </ul>
 
-### Neovim
+<h3 id='#neovim'>Neovim</h3>
 if you can't use system clipboard. Please download this
 
 #### Ubuntu
