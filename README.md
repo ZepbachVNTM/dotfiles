@@ -16,23 +16,6 @@
 <li><a href="https://archlinux.org/packages/community/x86_64/mate-power-manager">mate-power-manager</a></li>
 </ul>
 
-<h1>You will install</h1>
-
-## Ubuntu
-```bash
-sudo apt install i3 i3-gaps i3blocks i3status polybar python3 python3-pip make nitrogen ninja-build
-```
-## Arch linux
-```bash
-sudo pacman -S i3 i3-gaps i3status i3lock xorg-xset xorg-xrandr
-```
-
-autotilling
-```bash
-yay -S autotiling   # AUR only
-```
-
-
 ## Installing
 You will need `git` and GNU `stow`
 
