@@ -52,23 +52,23 @@ stow all # Everything
 stow theme\ i3 # Just my i3 config
 ```
 
-## Attention
+# Attention
 <b style="color: red">Attention: backgrounds directory is not configurable</b>
 
 <ul>
 <li><a href="#neovim">Neovim</a></li>
 </ul>
 
-<h3 id='#neovim'>Neovim</h3>
+<h2 id='#neovim'>Neovim</h2>
 if you can't use system clipboard. Please download this
 
-#### Ubuntu
+### Ubuntu
 ```bash
 sudo apt-get install xclip
 ```
 
 
-#### Arch linux
+### Arch linux
 ```bash
 pacman -S xclip
 ```
