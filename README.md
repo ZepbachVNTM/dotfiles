@@ -56,7 +56,7 @@ stow theme\ i3 # Just my i3 config
 <b style="color: red">Attention: backgrounds directory is not configurable</b>
 
 <ul>
-<li><a href="#Neovim">Neovim</a></li>
+<li><a href="#neovim">Neovim</a></li>
 </ul>
 
 ### Neovim
