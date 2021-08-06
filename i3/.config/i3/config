@@ -13,8 +13,6 @@ bindsym $mod+n border normal
 
 font xft:URWGothic-Book 11
 
-floating_modifier $mod
-
 bindsym $mod+Return exec i3-sensible-terminal
 
 # Window kill command
@@ -36,9 +34,10 @@ bindsym $mod+l focus right
 bindsym $mod+semicolon focus right
 
 # move focused window
-bindsym $mod+Shift+j move left
-bindsym $mod+Shift+k move down
-bindsym $mod+Shift+l move up
+bindsym $mod+Shift+h move left
+bindsym $mod+Shift+j move down
+bindsym $mod+Shift+k move up
+bindsym $mod+Shift+l move right
 bindsym $mod+Shift+semicolon move right
 
 bindsym $mod+Shift+Left move left
@@ -234,8 +233,12 @@ exec --no-startup-id ibus-daemon -xdr
 for_window [class="^.*"] border pixel 2
 gaps inner 10
 gaps outer 0
-smart_gaps on
+# smart_gaps on
 
+################# i3-radius #######################
+# smart_borders on
+# smart_borders no_gaps
+# border_radius 5
 
 # Press $mod+Shift+g to enter the gap mode. Choose o or i for modifying outer/inner gaps. Press one of + / - (in-/decrement for current workspace) or 0 (remove gaps for current workspace). If you also press Shift with these keys, the change will be global for all workspaces.
 set $mode_gaps Gaps: (o) outer, (i) inner
