@@ -1,0 +1,54 @@
+# A valid snippet should starts with:
+#
+#		snippet trigger_word [ "description" [ options ] ]
+#
+# and end with:
+#
+#		endsnippet
+#
+# Snippet options:
+#
+#		b - Beginning of line.
+#		i - In-word expansion.
+#		w - Word boundary.
+#		r - Regular expression
+#		e - Custom context snippet
+#		A - Snippet will be triggered automatically, when condition matches.
+#
+# Basic example:
+#
+#		snippet emitter "emitter properties" b
+#		private readonly ${1} = new Emitter<$2>()
+#		public readonly ${1/^_(.*)/$1/}: Event<$2> = this.$1.event
+#		endsnippet
+#
+# Online reference: https://github.com/SirVer/ultisnips/blob/master/doc/UltiSnips.txt
+
+snippet html "Description" b
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8" />
+	<title>Document</title>
+</head>
+<body>
+	$1
+</body>
+</html>
+endsnippet
+
+snippet link:css "Description" b
+<link rel="stylesheet" type="text/css" href="$1" />
+endsnippet
+
+snippet link:fontawesome "Description" b
+<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" />
+endsnippet
+
+snippet script:src "Description" b
+<script src="$1"></script>
+endsnippet
+
+snippet script:jquery "Description" b
+<script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+endsnippet
