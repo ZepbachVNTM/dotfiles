@@ -10,11 +10,6 @@ DATA_PATH = vim.fn.stdpath('data')
 CACHE = vim.fn.stdpath('cache')
 
 o.hidden = true
-if zvim.systemclipboard == true then
-  o.clipboard = 'unnamedplus'
-else
-  o.clipboard = ''
-end
 o.mouse = 'a'
 o.expandtab = true
 o.tabstop = 2

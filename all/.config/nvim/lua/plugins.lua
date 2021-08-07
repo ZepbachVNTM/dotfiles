@@ -61,4 +61,5 @@ return require('packer').startup(function()
   use 'metakirby5/codi.vim'
   use 'JamshedVesuna/vim-markdown-preview'
   use 'instant-markdown/vim-instant-markdown'
+  use 'terryma/vim-multiple-cursors'
 end)

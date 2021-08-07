@@ -6,6 +6,7 @@ require('general.default-settings')
 require('settings')
 require('keymappings')
 require('general.colorscheme')
+require('core.checksettings')
 
 -- Plugin
 require('core.colorizer')

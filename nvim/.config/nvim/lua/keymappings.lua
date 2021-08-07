@@ -24,7 +24,7 @@ local mappings = {
     { "<TAB>", ":bnext<CR>" },
     { "<S-TAB>", ":bprev<CR>" },
     { "<C-_>", ":CommentToggle<CR>" },
-    { "<C-q>", ":bwipeout<CR>" },
+    { "<C-w>", ":bwipeout<CR>" },
     { "<F8>", "<Plug>MarkdownPreview" },
     { "<F9>", "<Plug>StopMarkdownPreview" }
   },
