@@ -4,7 +4,7 @@ background = #1E272B
 background-alt = #444
 ;foreground = ${xrdb:color7:#222}
 foreground = #EAD49B
-foreground-alt = #555
+foreground-alt = #000
 primary = #ffb52a
 secondary = #e60053
 alert = #bd2c40
@@ -69,7 +69,7 @@ label-mode-background = #78824b
 
 label-focused = %icon%
 label-focused-background = #78824b
-label-focused-foreground = #000
+label-focused-foreground = ${colors.foreground-alt}
 label-focused-padding = 2
 
 label-unfocused = %icon%
