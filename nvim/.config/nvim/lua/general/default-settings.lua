@@ -23,5 +23,7 @@ o.cursorline = true
 o.showmode = false
 o.encoding = "utf-8"
 o.backup = false
+o.sidescrolloff = 8
+o.scrolloff = 4
 
 vim.cmd 'command! -nargs=0 Prettier :CocCommand prettier.formatFile'
