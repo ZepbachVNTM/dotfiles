@@ -21,10 +21,10 @@ local mappings = {
   },
   n = {
     { "<Space>e", ":NvimTreeToggle<CR>" },
-    { "<TAB>", ":bnext<CR>" },
-    { "<S-TAB>", ":bprev<CR>" },
+    { "<TAB>", ":BufferNext<CR>" },
+    { "<S-TAB>", ":BufferPrev<CR>" },
+    { "<S-x>", ":BufferClose<CR>" },
     { "<C-_>", ":CommentToggle<CR>" },
-    { "<C-w>", ":bwipeout<CR>" },
     { "<F8>", "<Plug>MarkdownPreview" },
     { "<F9>", "<Plug>StopMarkdownPreview" }
   },

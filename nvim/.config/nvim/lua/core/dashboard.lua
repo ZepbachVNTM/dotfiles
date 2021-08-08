@@ -1,7 +1,7 @@
 local g = vim.g
 local cmd = vim.cmd
 
-g.dashboard_custom_header = dashboard_themes
+g.dashboard_custom_header = zvim.dashboardHeader
 
 g.dashboard_default_executive = 'telescope'
 g.dashboard_custom_section = {

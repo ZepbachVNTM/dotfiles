@@ -1,11 +1,13 @@
 local o = vim.o
 
 -- dashboard themes: default | chika
-dashboard_themes = chika
+zvim.dashboardHeader = chika
 
 zvim.colorschemes = 'onedark'
 zvim.leader = ' '
-zvim.systemclipboard = true
+zvim.systemClipboard = true
+zvim.wordWrap = true
+
 o.hlsearch = false
 o.number = true
 o.timeoutlen=200
