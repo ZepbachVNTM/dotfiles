@@ -43,6 +43,16 @@ stow theme\ i3 # Just my i3 config
 </ul>
 
 <h2 id='#neovim'>Neovim</h2>
+after configuring neovim. Use this command to install the extension
+
+```bash
+nvim -u /home/zepbachvntm/.config/nvim/init.lua +PackerInstall
+
+cd ~/.local/share/nvim/site/pack/packer/start/coc.nvim
+yarn install --frozen-lockfile --ignore-engines
+```
+
+
 if you can't use system clipboard. Please download this
 
 ### Ubuntu
