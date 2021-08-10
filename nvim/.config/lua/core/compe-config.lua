@@ -15,17 +15,23 @@ require'compe'.setup {
   documentation = false;
 
   source = {
-    path = true;
-    buffer = true;
-    calc = true;
-    vsnip = true;
-    nvim_lsp = true;
-    nvim_lua = true;
-    spell = true;
-    tags = true;
-    snippets_nvim = true;
-    treesitter = true;
-  };
+    path = { kind = "   (Path)" },
+    buffer = { kind = "   (Buffer)" },
+    calc = { kind = "   (Calc)" },
+    vsnip = { kind = "   (Snippet)" },
+    nvim_lsp = { kind = "   (LSP)" },
+    nvim_lua = false,
+    spell = { kind = "   (Spell)" },
+    tags = false,
+    vim_dadbod_completion = false,
+    snippets_nvim = false,
+    ultisnips = false,
+    treesitter = false,
+    emoji = { kind = " ﲃ  (Emoji)", filetypes = { "markdown", "text" } },
+    -- for emoji press : (idk if that in compe tho)
+  },
+  -- FileTypes in this list won't trigger auto-complete when TAB is pressed.  Hitting TAB will insert a tab character
+  exclude_filetypes = { "md", "markdown", "mdown", "mkd", "mkdn", "mdwn", "text", "txt" },
 }
 local t = function(str)
   return vim.api.nvim_replace_termcodes(str, true, true, true)
