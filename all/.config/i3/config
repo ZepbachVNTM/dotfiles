@@ -235,7 +235,7 @@ exec --no-startup-id i3-msg 'workspace 2; exec gnome-terminal'
 # Gaps
 for_window [class="^.*"] border pixel 2
 gaps inner 10
-gaps outer 0
+gaps outer -1
 # smart_gaps on
 
 ################# i3-radius #######################

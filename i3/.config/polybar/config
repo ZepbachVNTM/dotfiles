@@ -1,28 +1,31 @@
 [colors]
 ;background = ${xrdb:color0:#222}
-background = #1E272B
-background-alt = #444
+background = #331e1e1e
+background-alt = #bf1e1e1e
 ;foreground = ${xrdb:color7:#222}
-foreground = #EAD49B
-foreground-alt = #000
+foreground = #555
+foreground-alt = #eaeaea
 primary = #ffb52a
 secondary = #e60053
 alert = #bd2c40
 
-[bar/i3wmthemer_bar]
+[bar/example]
 width = 100%
 height = 27
-radius = 0
-fixed-center = true
+radius = 6.0
+fixed-center = false
 
 background = ${colors.background}
-foreground = ${colors.foreground}
+foreground = ${colors.foreground-alt}
 
 line-size = 3
-line-color = 
+line-color = #f00 
 
-border-size = 0
-border-color =
+border-size = 3
+border-color = #00000000
+
+;scroll-up = "#i3.prev"
+;scroll-down = "#i3.next"
 
 padding-left = 0
 padding-right = 2
@@ -32,16 +35,22 @@ module-margin-right = 2
 
 font-0 = "Source Code Pro Semibold:size=10;1"
 font-1 = "Font Awesome 5 Free:style=Solid:size=10;1"
-font-2 = "Font Awesome 5 Brands:size=10;1"
+font-2 = "UbuntuMono NF:size=20;5"
 
 modules-left = i3
-modules-center = date
-modules-right = wlan eth powermenu
+modules-center = 
+modules-right = filesystem pulseaudio xkeyboard date time powermenu
 
-# tray-position = right
-# ;tray-padding = 
-wm-restack = i3
-override-redirect = false
+
+tray-position = none
+tray-padding = 2
+;tray-background = #0063ff
+
+separator = "| "
+
+;wm-restack = i3
+
+;override-redirect = true
 
 cursor-click = pointer
 cursor-scroll = ns-resize
@@ -52,90 +61,52 @@ format = <label-state> <label-mode>
 index-sort = true
 wrapping-scroll = false
 
-ws-icon-0 = 1;1 
-ws-icon-1 = 2;2 ︁
-ws-icon-2 = 3;3 
-ws-icon-3 = 4;4 
-ws-icon-4 = 5;5 
-ws-icon-5 = 6;6 
-ws-icon-6 = 7;7 
-ws-icon-7 = 8;8 
-ws-icon-8 = 9;9 
-ws-icon-9 = 10;10 
+ws-icon-0 = 1;
+ws-icon-1 = 2;
+ws-icon-default = 
 
-label-mode-padding = 2
-label-mode-foreground = #1E272B
+label-mode-padding = 1
+label-mode-foreground = ${colors.foreground}
 label-mode-background = #78824b
 
 label-focused = %icon%
-label-focused-background = #78824b
+label-focused-background = ${colors.background-alt}
 label-focused-foreground = ${colors.foreground-alt}
-label-focused-padding = 2
+label-focused-underline = ${colors.primary}
+label-focused-padding = 1
 
 label-unfocused = %icon%
 label-unfocused-background = ${colors.background}
-label-unfocused-foreground = #5e663b
-label-unfocused-padding = 2
+label-unfocused-foreground = ${colors.foreground}
+label-unfocused-padding = 1
 
 label-visible = %icon%
 label-visible-background = #78824b
-label-visible-foreground = #1E272B
-label-visible-padding = 2
+label-visible-foreground = ${colors.foreground}
+label-visible-padding = 1
 
 label-urgent = %icon%
 label-urgent-background = #BA2922
-label-urgent-padding = 2
+label-urgent-padding = 1
 
-[module/wlan]
-type = internal/network
-interface = net1
-interval = 3.0
+[module/xkeyboard]
+type = internal/xkeyboard
+blacklist-0 =num lock
 
-format-connected = <ramp-signal> <label-connected>
-format-connected-foreground = #1E272B
-format-connected-background = #9d6a47
-format-connected-padding = 2
-label-connected = %essid%
+format-prefix = " "
+format-prefix-foreground = ${colors.foreground-alt}
+format-prefix-underline = ${colors.secondary}
 
-format-disconnected =
+label-layout =%layout% 
+label-layout-underline = ${colors.secondary}
+label-layout-foreground = ${colors.foreground-alt}
 
-ramp-signal-0 = 
-ramp-signal-1 = 
-ramp-signal-2 = 
-ramp-signal-3 = 
-ramp-signal-4 = 
-ramp-signal-foreground = #1E272B
+label-indicator-padding = 1
+label-indicator-margin = 1
+label-indicator-background = ${colors.secondary}
+label-indicator-on-capslock = 
 
-[module/eth]
-type = internal/network
-interface = enp0s3
-interval = 3.0
-
-format-connected-padding = 2
-format-connected-foreground = #1E272B
-format-connected-background = #9d6a47
-format-connected-prefix = " "
-format-connected-prefix-foreground = #1E272B
-label-connected = %local_ip%
-
-format-disconnected =
-
-[module/date]
-type = internal/date
-interval = 1
-
-date = 
-date-alt = " %d-%m-%Y"
-
-time = %H:%M
-time-alt = %H:%M:%S
-
-format-prefix = 
-format-foreground = #1E272B
-format-background = #d99f57
-format-padding = 2
-
-label = %date% %time%
+label-underline = ${colors.secondary}
 
 [module/powermenu]
 type = custom/menu
@@ -143,9 +114,9 @@ type = custom/menu
 expand-right = true
 format-underline = #BF616A
 
-format-spacing = 1
+format-spacing = 0
 
-label-open = 
+label-open =
 label-open-foreground = #ECEFF4
 label-close =  Cancel
 label-close-foreground = #EBCB8B
@@ -161,22 +132,74 @@ menu-0-2-exec = menu-open-3
 
 menu-1-0 = "Reboot"
 menu-1-0-exec = reboot
-menu-1-1 = " "
-menu-1-1-exec = menu-open-0
 
 menu-2-0 = "Power off"
 menu-2-0-exec = poweroff
-menu-2-1 = " "
-menu-2-1-exec = menu-open-0
 
 menu-3-0 = "Log out"
 menu-3-0-exec = i3 exit logout
-menu-3-1 = " "
-menu-3-1-exec = menu-open-0
 
 [settings]
 screenchange-reload = true
 
-[global/wm]
-margin-top = 0
-margin-bottom = 0
+[module/filesystem]
+type = internal/fs
+interval = 25
+
+mount-0 = /
+
+label-mounted =  %free%
+label-mounted-foreground = ${colors.foreground-alt}
+label-unmounted = %mountpoint% not mounted
+label-unmounted-foreground = ${colors.foreground-alt}
+
+[module/time]
+type = internal/date
+interval = 5
+
+time =%H:%M
+
+format-prefix = 
+format-underline = #175BC6
+format-foreground = ${colors.foreground-alt}
+
+label = %date% %time%
+
+[module/date]
+type = internal/date
+internal = 600
+
+date = %A %d-%m-%Y
+
+format-prefix = " "
+format-foreground = ${colors.foreground-alt}
+format-underline = #4D8F52
+
+[module/pulseaudio]
+type = internal/pulseaudio
+
+label-muted = 婢 muted
+label-muted-foreground = #666
+ramp-volume-0 = 
+ramp-volume-1 = 
+ramp-volume-2 = 
+
+format-volume = <ramp-volume> <label-volume>
+click-right = pavucontrol
+
+interval = 5
+
+[module/cpu]
+type = internal/cpu
+format = <label> <ramp-coreload>
+
+ramp-coreload-spacing = 1
+ramp-coreload-0 = ▁
+ramp-coreload-1 = ▂
+ramp-coreload-2 = ▃
+ramp-coreload-3 = ▄
+ramp-coreload-4 = ▅
+ramp-coreload-5 = ▆
+ramp-coreload-6 = ▇
+ramp-coreload-7 = █
+interval = 0.5
