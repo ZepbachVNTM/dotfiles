@@ -18,6 +18,6 @@ esac || {
   [ -z "$1" ] && ln -sf "$(find "$wpdir" -iregex '.*.\(png\|jpg\|jpeg\)' -type f | shuf -n 1)" "$l_wploc"
 }
 
-xwallpaper --zoom "$l_wploc"
+nitrogen --set-scaled "$l_wploc"
 
 exit 0
