@@ -13,6 +13,16 @@ function zsh_add_plugin() {
         git clone "https://github.com/$1.git" "$ZDOTDIR/plugins/$PLUGIN_NAME"
     fi
 }
+function zsh_add_custom_plugin() {
+  PLUGIN_NAME=$(echo $1)
+  if [ -d "$ZDOTDIR/customs/plugins/$PLUGIN_NAME" ]; then
+    # For plugins
+    zsh_add_file "customs/plugins/$PLUGIN_NAME/$PLUGIN_NAME.plugin.zsh" || \
+    zsh_add_file "customs/$PLUGIN_NAME/$PLUGIN_NAME.zsh"
+  else
+    echo "Plugin $PLUGIN_NAME not found!"
+  fi
+}
 
 function zsh_add_completion() {
     PLUGIN_NAME=$(echo $1 | cut -d "/" -f 2)
@@ -29,4 +39,3 @@ function zsh_add_completion() {
 	completion_file="$(basename "${completion_file_path}")"
 	if [ "$2" = true ] && compinit "${completion_file:1}"
 }
-
