@@ -1,20 +1,18 @@
 # dotfiles
 ![dotfile image](./.github/wallpaper.png)
 
-<h1>What you will need</h1>
-<ul>
-<li>Python 3</li>
-<li><a href="https://github.com/Airblader/i3">i3-gaps</a></li>
-<li><a href="https://github.com/jaagr/polybar">Polybar</a></li>
-<li><a href="https://github.com/DaveDavenport/rofi">Rofi</a></li>
-<li><a href="https://fontawesome.com">Font-Awesome-5</a></li>
-<li><a href="https://aur.archlinux.org/packages/nitrogen-git/">Nitrogen</a></li>
-<li><a href="https://aur.archlinux.org/packages/nerd-fonts-complete/">nerd-fonts-complete</a></li>
-<li><a href="https://github.com/adobe-fonts/source-code-pro">Adobe Source Code Pro font</a></li>
-<li><a href="https://wiki.archlinux.org/index.php/Rxvt-unicode">rxvt-unicode</a></li>
-<li><a href="https://archlinux.org/packages/extra/x86_64/alsa-utils">alsa-utils</a></li>
-<li><a href="https://archlinux.org/packages/community/x86_64/mate-power-manager">mate-power-manager</a></li>
-</ul>
+# What you will need
+- Python 3
+- [i3-gaps](https://github.com/Airblader/i3)
+- [Polybar](https://github.com/jaagr/polybar)
+- [Rofi](https://github.com/DaveDavenport/rofi)
+- [Font-Awesome-5](https://fontawesome.com)
+- [Nitrogen](https://aur.archlinux.org/packages/nitrogen-git)
+- [nerd-fonts-complete](https://aur.archlinux.org/packages/nerd-fonts-complete/)
+- [Adobe Source Code Pro font](https://github.com/adobe-fonts/source-code-pro)
+- [rxvt-unicode](https://wiki.archlinux.org/index.php/Rxvt-unicode)
+- [alsa-utils](https://archlinux.org/packages/extra/x86_64/alsa-utils)
+- [mate-power-manager](https://archlinux.org/packages/community/x86_64/mate-power-manager)
 
 ## Installing
 You will need `git` and GNU `stow`
@@ -42,7 +40,7 @@ stow theme\ i3 # Just my i3 config
 <li><a href="#neovim">Neovim</a></li>
 </ul>
 
-<h2 id='#neovim'>Neovim</h2>
+## Neovim {#neovim}
 after configuring neovim. Use this command to install the extension
 
 ```bash
