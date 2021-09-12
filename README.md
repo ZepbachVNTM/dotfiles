@@ -26,7 +26,7 @@ git clone https://github.com/ZepbachVNTM/dotfiles.git ~
 Run `stow` to symlink everything or just select what you want
 
 ```bash
-stow all # Everything
+stow ./ # Everything
 ```
 
 ```bash
@@ -38,7 +38,7 @@ stow theme\ i3 # Just my i3 config
 
 [Neovim](#neovim)
 
-## Neovim {#neovim}
+<h2 id="neovim">Neovim</h2>
 after configuring neovim. Use this command to install the extension
 
 ```bash
