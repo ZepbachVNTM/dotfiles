@@ -36,9 +36,7 @@ stow theme\ i3 # Just my i3 config
 # Attention
 <b style="color: red">Attention: backgrounds directory is not configurable</b>
 
-<ul>
-<li><a href="#neovim">Neovim</a></li>
-</ul>
+[Neovim](#neovim)
 
 ## Neovim {#neovim}
 after configuring neovim. Use this command to install the extension
