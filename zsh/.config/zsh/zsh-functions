@@ -13,14 +13,12 @@ function zsh_add_plugin() {
         git clone "https://github.com/$1.git" "$ZDOTDIR/plugins/$PLUGIN_NAME"
     fi
 }
-function zsh_add_custom_plugin() {
-  PLUGIN_NAME=$(echo $1)
-  if [ -d "$ZDOTDIR/customs/plugins/$PLUGIN_NAME" ]; then
-    # For plugins
-    zsh_add_file "customs/plugins/$PLUGIN_NAME/$PLUGIN_NAME.plugin.zsh" || \
-    zsh_add_file "customs/$PLUGIN_NAME/$PLUGIN_NAME.zsh"
-  else
-    echo "Plugin $PLUGIN_NAME not found!"
+function zsh_theme() {
+  THEME_NAME=$(echo $1)
+  if [ -f "$ZDOTDIR/themes/$THEME_NAME" ]; then
+    zsh_add_file "themes/$THEME_NAME"
+  else 
+    echo "ZSH: Theme $THEME_NAME not found!"
   fi
 }
 
