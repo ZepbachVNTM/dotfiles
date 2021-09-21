@@ -1,15 +1,18 @@
 #!/bin/sh
-alias j='z'
-alias f='zi'
 alias zsh-update-plugins="find "$ZDOTDIR/plugins" -type d -exec test -e '{}/.git' ';' -print0 | xargs -I {} -0 git -C {} pull -q"
+
 alias uget="aria2c -x 16 -s 16"
 
 alias rm='rm -r'
 
-if [ $(command -v lvim) ]; then
+if [ $EDITOR = 'lvim' ]; then
   alias nv="lvim"
 else
   alias nv="nvim"
+fi
+
+if [ $(command -v live-server) ]; then
+	alias live="live-server"
 fi
 
 

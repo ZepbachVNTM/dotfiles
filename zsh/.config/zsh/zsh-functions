@@ -5,7 +5,11 @@ function zsh_add_file() {
 
 function zsh_add_plugin() {
     PLUGIN_NAME=$(echo $1 | cut -d "/" -f 2)
-    if [ -d "$ZDOTDIR/plugins/$PLUGIN_NAME" ]; then 
+    if [ -d "$ZDOTDIR/custom/plugins/$PLUGIN_NAME" ]; then 
+        # For plugins
+        zsh_add_file "custom/plugins/$PLUGIN_NAME/$PLUGIN_NAME.plugin.zsh" || \
+        zsh_add_file "custom/plugins/$PLUGIN_NAME/$PLUGIN_NAME.zsh"
+    elif [ -d "$ZDOTDIR/plugins/$PLUGIN_NAME" ]; then 
         # For plugins
         zsh_add_file "plugins/$PLUGIN_NAME/$PLUGIN_NAME.plugin.zsh" || \
         zsh_add_file "plugins/$PLUGIN_NAME/$PLUGIN_NAME.zsh"
@@ -15,8 +19,14 @@ function zsh_add_plugin() {
 }
 function zsh_theme() {
   THEME_NAME=$(echo $1)
-  if [ -f "$ZDOTDIR/themes/$THEME_NAME" ]; then
-    zsh_add_file "themes/$THEME_NAME"
+  if [ -f "$ZDOTDIR/custom/themes/$THEME_NAME" ]; then
+    # For themes
+    zsh_add_file "custom/themes/$THEME_NAME" || \
+    zsh_add_file "custom/themes/$THEME_NAME.zsh-theme"
+  elif [ -f "$ZDOTDIR/themes/$THEME_NAME" ]; then
+    # For themes
+    zsh_add_file "themes/$THEME_NAME" || \
+    zsh_add_file "themes/$THEME_NAME.zsh-theme"
   else 
     echo "ZSH: Theme $THEME_NAME not found!"
   fi

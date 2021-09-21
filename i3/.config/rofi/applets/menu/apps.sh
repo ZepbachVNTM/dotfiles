@@ -29,7 +29,9 @@ options="$terminal\n$files\n$editor\n$browser\n$music\n$settings"
 chosen="$(echo -e "$options" | $rofi_command -p "Most Used" -dmenu -selected-row 0)"
 case $chosen in
     $terminal)
-		if [[ -f /usr/bin/termite ]]; then
+		if [[ -f /usr/bin/st ]]; then
+			st &
+		elif [[ -f /usr/bin/termite ]]; then
 			termite &
 		elif [[ -f /usr/bin/urxvt ]]; then
 			urxvt &
@@ -46,7 +48,9 @@ case $chosen in
 		fi
         ;;
     $files)
-		if [[ -f /usr/bin/thunar ]]; then
+    if [[ -f /usr/bin/nautilus ]]; then
+      nautilus &
+		elif [[ -f /usr/bin/thunar ]]; then
 			thunar &
 		elif [[ -f /usr/bin/pcmanfm ]]; then
 			pcmanfm &
@@ -68,7 +72,9 @@ case $chosen in
 		fi
         ;;
     $browser)
-		if [[ -f /usr/bin/firefox ]]; then
+    if [[ -f /usr/bin/$BROWSER ]]; then
+      $BROWSER --enable-features=WebUIDarkMode --force-dark-mode &
+		elif [[ -f /usr/bin/firefox ]]; then
 			firefox &
 		elif [[ -f /usr/bin/chromium ]]; then
 			chromium &
@@ -79,7 +85,9 @@ case $chosen in
 		fi
         ;;
     $music)
-		if [[ -f /usr/bin/lxmusic ]]; then
+    if [[ -f /usr/bin/rhythmbox ]]; then
+      rhythmbox &
+		elif [[ -f /usr/bin/lxmusic ]]; then
 			lxmusic &
 		else
 			msg "No suitable music player found!"

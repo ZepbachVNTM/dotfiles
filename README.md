@@ -38,7 +38,7 @@ stow theme\ i3 # Just my i3 config
 
 [Neovim](#neovim)
 
-<h2 id="neovim">Neovim</h2>
+## Neovim
 after configuring neovim. Use this command to install the extension
 
 ```bash

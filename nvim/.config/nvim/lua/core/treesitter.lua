@@ -1,25 +1,11 @@
-require'nvim-treesitter.configs'.setup{
-  ensure_installed = "all",
-  highlight = {
-    enable = true,
-  },
-  playground = {
-    enable = true,
-    disable = {},
-    updatetime = 25,
-    persist_queries = false
-  },
-  rainbow = {
-    enable = true,
-    colors = {
-      "#bf616a",
-      "#d08770",
-      "#ebcb8b",
-      "#a3be8c",
-      "#88c0d0",
-      "#5e81ac",
-      "#b48ead"
-    }
-  }
+require'nvim-treesitter.configs'.setup {
+	highlight = {
+		enable = true
+	},
+	playground = {
+		enable = true,
+		disable = {},
+		updatetime = 25, -- Debounced time for highlighting nodes in the playground from source code
+		persist_queries = false, -- Whether the query persists across vim sessions
+	},
 }
-vim.g.rainbow_active = 1
