@@ -2,12 +2,12 @@
 ![dotfile image](./.github/wallpaper.png)
 
 # What you will need
-- [St(Simple Terminal)](https://github.com/hd929/st)
 - Python 3
+- [Rofi](https://github.com/adi1090x/rofi)
+- [St(Simple Terminal)](https://github.com/hd929/st)
 - [i3-gaps](https://github.com/Airblader/i3)
 - [Polybar](https://github.com/jaagr/polybar)
 - [Rofi](https://github.com/DaveDavenport/rofi)
-- [Font-Awesome-5](https://fontawesome.com)
 - [Nitrogen](https://aur.archlinux.org/packages/nitrogen-git)
 - [nerd-fonts-complete](https://aur.archlinux.org/packages/nerd-fonts-complete/)
 - [Adobe Source Code Pro font](https://github.com/adobe-fonts/source-code-pro)
