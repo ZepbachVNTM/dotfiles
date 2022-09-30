@@ -2,6 +2,7 @@
 ![dotfile image](./.github/wallpaper.png)
 
 # What you will need
+- [St(Simple Terminal)](https://github.com/hd929/st)
 - Python 3
 - [i3-gaps](https://github.com/Airblader/i3)
 - [Polybar](https://github.com/jaagr/polybar)
