@@ -30,7 +30,7 @@ stow ./ # Everything
 ```
 
 ```bash
-stow theme\ i3 # Just my i3 config
+stow i3 # Just my i3 config
 ```
 
 # Attention
