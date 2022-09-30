@@ -20,7 +20,7 @@ You will need `git` and GNU `stow`
 Clone into your `$HOME` directory or `~`
 
 ```bash
-git clone https://github.com/ZepbachVNTM/dotfiles.git ~
+git clone https://github.com/hd929/dotfiles.git ~
 ```
 
 Run `stow` to symlink everything or just select what you want
