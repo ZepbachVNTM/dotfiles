@@ -17,6 +17,17 @@
 ## Installing
 You will need `git` and GNU `stow`
 
+### Arch Linux/Manjaro
+
+```bash
+sudo pacman -S stow
+```
+
+### Ubuntu/Debian
+```bash
+sudo apt install -y stow
+```
+
 Clone into your `$HOME` directory or `~`
 
 ```bash
