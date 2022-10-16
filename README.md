@@ -54,7 +54,7 @@ stow i3 # Just my i3 config
 after configuring neovim. Use this command to install the extension
 
 ```bash
-nvim -u /home/zepbachvntm/.config/nvim/init.lua +PackerInstall
+nvim -u ~/.config/nvim/init.lua +PackerInstall
 
 cd ~/.local/share/nvim/site/pack/packer/start/coc.nvim
 yarn install --frozen-lockfile --ignore-engines
