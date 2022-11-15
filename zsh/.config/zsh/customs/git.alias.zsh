@@ -38,6 +38,7 @@ function grename() {
   fi
 }
 
+alias g='git'
 alias gcam='git commit -a -m'
 alias gb='git branch'
 alias gba='git branch -a'
@@ -58,3 +59,7 @@ alias grbm='git rebase $(git_main_branch)'
 
 alias gl='git pull'
 alias gp='git push'
+
+alias gm='git merge'
+alias gmom='git merge origin/$(git_main_branch)'
+alias gmum='git merge upstream/$(git_main_branch)'
