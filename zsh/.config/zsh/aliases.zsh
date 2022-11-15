@@ -1,7 +1,7 @@
 #!/bin/sh
 alias j="z"
 alias f="zi"
-alias g="lazygit"
+alias lz="lazygit"
 alias nvimrc='nvim ~/.config/nvim/'
 
 if [ $EDITOR='lvim' ]; then

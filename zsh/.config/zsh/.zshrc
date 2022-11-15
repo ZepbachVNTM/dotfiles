@@ -16,6 +16,7 @@ plug "zap-zsh/exa"
 # source
 plug "$HOME/.config/zsh/aliases.zsh"
 plug "$HOME/.config/zsh/exports.zsh"
+plug "$HOME/.config/zsh/customs/git.alias.zsh"
 
 # keybinds
 bindkey '^ ' autosuggest-accept
