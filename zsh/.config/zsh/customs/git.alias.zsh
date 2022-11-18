@@ -39,6 +39,7 @@ function grename() {
 }
 
 alias g='git'
+alias gst='git status'
 alias gcam='git commit -a -m'
 alias gb='git branch'
 alias gba='git branch -a'

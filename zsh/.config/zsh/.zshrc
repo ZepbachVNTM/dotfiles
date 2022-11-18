@@ -12,6 +12,7 @@ plug "zap-zsh/vim"
 plug "zap-zsh/zap-prompt"
 plug "zap-zsh/fzf"
 plug "zap-zsh/exa"
+plug "hd929/web-search"
 
 # source
 plug "$HOME/.config/zsh/aliases.zsh"
