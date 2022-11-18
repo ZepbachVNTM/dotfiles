@@ -47,27 +47,7 @@ alias archlinx-fix-keys="sudo pacman-key --init && sudo pacman-key --populate ar
 # systemd
 alias mach_list_systemctl="systemctl list-unit-files --state=enabled"
 
-case "$(uname -s)" in
-
-Darwin)
-	# echo 'Mac OS X'
-	alias ls='ls -G'
-	;;
-
-Linux)
-  if [ $(command -v lsd) ]; then
-    alias ls="lsd --group-directories-first"
-    alias ll="lsd -lA --group-directories-first"
-    alias la="lsd -A --group-directories-first"
-  else
-    alias ls='ls --color=auto'
-  fi
-	;;
-
-CYGWIN* | MINGW32* | MSYS* | MINGW*)
-	# echo 'MS Windows'
-	;;
-*)
-	# echo 'Other OS'
-	;;
-esac
+if command -v exa &> /dev/null; then
+  alias ll="exa --icons -la --group-directories-first"
+  alias la="exa --icons -a --group-directories-first"
+fi
