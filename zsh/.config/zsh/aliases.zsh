@@ -25,6 +25,8 @@ alias cp="cp -i"
 alias mv='mv -i'
 alias rm='rm -i'
 
+alias cl='clear'
+
 # easier to read disk
 alias df='df -h'     # human-readable sizes
 alias free='free -m' # show sizes in MB
