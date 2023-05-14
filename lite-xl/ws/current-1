@@ -1,1 +1,0 @@
-return { path = "C:\\Users\\mscze\\scoop\\apps\\lite-xl\\current", documents = {["type"]="leaf",["active_view"]=1,["views"]={[1]={["type"]="view",["scroll"]={["y"]=0,["x"]=0,["to"]={["y"]=0,["x"]=0}},["active"]=true,["module"]="core.emptyview"}}}, directories = {} }
