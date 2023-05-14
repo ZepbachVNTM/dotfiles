@@ -1,0 +1,6 @@
+gui:
+  showIcons: true
+
+os:
+  open: 'start "" {{filename}}'
+  editPreset: 'nvim'

@@ -1,0 +1,1 @@
+return { path = "C:\\Users\\mscze\\.config\\lite-xl", documents = {["type"]="leaf",["active_view"]=1,["views"]={[1]={["text"]=false,["filename"]="init.lua",["selection"]={[1]=76,[2]=5,[3]=76,[4]=5},["active"]=true,["scroll"]={["x"]=0,["y"]=1250.0},["type"]="doc"}}}, directories = {} }
