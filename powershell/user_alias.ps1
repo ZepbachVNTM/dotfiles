@@ -17,6 +17,7 @@ New-Alias open ii
 New-Alias grep findstr
 New-Alias live live-server
 New-Alias cl Clear-Host
+New-Alias lz lazygit
 
 ## Yarn
 function Add-YarnPackage { yarn add @Args --emoji }
