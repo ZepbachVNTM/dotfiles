@@ -1,126 +1,174 @@
+;==========================================================
+;
+;
+;   ██████╗  ██████╗ ██╗  ██╗   ██╗██████╗  █████╗ ██████╗
+;   ██╔══██╗██╔═══██╗██║  ╚██╗ ██╔╝██╔══██╗██╔══██╗██╔══██╗
+;   ██████╔╝██║   ██║██║   ╚████╔╝ ██████╔╝███████║██████╔╝
+;   ██╔═══╝ ██║   ██║██║    ╚██╔╝  ██╔══██╗██╔══██║██╔══██╗
+;   ██║     ╚██████╔╝███████╗██║   ██████╔╝██║  ██║██║  ██║
+;   ╚═╝      ╚═════╝ ╚══════╝╚═╝   ╚═════╝ ╚═╝  ╚═╝╚═╝  ╚═╝
+;
+;
+;   To learn more about how to configure Polybar
+;   go to https://github.com/polybar/polybar
+;
+;   The README contains a lot of information
+;
+;==========================================================
+
 [colors]
-;background = ${xrdb:color0:#222}
-background = #E624283B
-background-alt = #33467C
-;foreground = ${xrdb:color7:#222}
-foreground = #D8DEE9
-foreground-alt = #eaeaea
-primary = #7AA2F7
-secondary = #e60053
-alert = #bd2c40
+background = #282A2E
+background-alt = #373B41
+foreground = #C5C8C6
+primary = #F0C674
+secondary = #8ABEB7
+alert = #A54242
+disabled = #707880
 
 [bar/example]
 width = 100%
-height = 27
-radius = 0
-fixed-center = false
+height = 24pt
+radius = 6
+
+; dpi = 96
 
 background = ${colors.background}
-foreground = ${colors.foreground-alt}
+foreground = ${colors.foreground}
 
-line-size = 3
-line-color = #f00 
+line-size = 3pt
 
-border-size = 0
+border-size = 4pt
 border-color = #00000000
 
-;scroll-up = "#i3.prev"
-;scroll-down = "#i3.next"
-
 padding-left = 0
-padding-right = 2
+padding-right = 1
 
-module-margin-left = 1
-module-margin-right = 2
+module-margin = 1
 
-font-0 = "MesloLGS Nerd Font:size=10;1"
-font-1 = "codicon:style=Solid:size=10;1"
+separator = |
+separator-foreground = ${colors.disabled}
 
-modules-left = i3
-modules-center = 
-modules-right = time pulseaudio date
+font-0 = monospace;2
 
-tray-position = right
-tray-padding = 2
-;tray-background = #0063ff
-
-
-;wm-restack = i3
-
-;override-redirect = true
+modules-left = xworkspaces xwindow
+modules-right = filesystem pulseaudio xkeyboard memory cpu wlan eth date
 
 cursor-click = pointer
 cursor-scroll = ns-resize
 
-[module/i3]
-type = internal/i3
-format = <label-state> <label-mode>
-index-sort = true
-wrapping-scroll = false
+enable-ipc = true
 
-label-mode-padding = 1
-label-mode-foreground = ${colors.foreground}
-label-mode-background = #78824b
+; tray-position = right
 
-label-focused = %index%
-label-focused-background = ${colors.background-alt}
-label-focused-foreground = ${colors.foreground-alt}
-label-focused-underline = ${colors.primary}
-label-focused-padding = 1
+; wm-restack = generic
+; wm-restack = bspwm
+; wm-restack = i3
 
-label-unfocused = %index%
-label-unfocused-background = ${colors.background}
-label-unfocused-foreground = ${colors.foreground}
-label-unfocused-padding = 1
+; override-redirect = true
 
-label-visible = %icon%
-label-visible-background = #78824b
-label-visible-foreground = ${colors.foreground}
-label-visible-padding = 1
+[module/xworkspaces]
+type = internal/xworkspaces
 
-label-urgent = %icon%
-label-urgent-background = #BA2922
+label-active = %name%
+label-active-background = ${colors.background-alt}
+label-active-underline= ${colors.primary}
+label-active-padding = 1
+
+label-occupied = %name%
+label-occupied-padding = 1
+
+label-urgent = %name%
+label-urgent-background = ${colors.alert}
 label-urgent-padding = 1
 
-[settings]
-screenchange-reload = true
+label-empty = %name%
+label-empty-foreground = ${colors.disabled}
+label-empty-padding = 1
 
-[module/time]
-type = internal/date
-interval = 5
+[module/xwindow]
+type = internal/xwindow
+label = %title:0:60:...%
 
-time =%H:%M
+[module/filesystem]
+type = internal/fs
+interval = 25
 
-format-prefix = 
-format-foreground = #7aa2f7
+mount-0 = /
 
-label = %date% %time%
+label-mounted = %{F#F0C674}%mountpoint%%{F-} %percentage_used%%
 
-[module/date]
-type = internal/date
-internal = 600
-
-date = %A %d-%m-%Y
-
-format-prefix = " "
-format-foreground = #7DCFFF
+label-unmounted = %mountpoint% not mounted
+label-unmounted-foreground = ${colors.disabled}
 
 [module/pulseaudio]
 type = internal/pulseaudio
 
-format-volume = <ramp-volume> <label-volume>
-format-volume-foreground = #7AA2F7
+format-volume-prefix = "VOL "
+format-volume-prefix-foreground = ${colors.primary}
+format-volume = <label-volume>
 
-label-muted = 婢 muted
-label-muted-foreground = #F7768E
+label-volume = %percentage%%
 
-ramp-volume-0 = 
-ramp-volume-1 = 
-ramp-volume-2 = 
-ramp-volume-3 = 
-ramp-volume-4 = 
-ramp-volume-5 = 
-ramp-volume-6 = 
-click-right = pavucontrol
+label-muted = muted
+label-muted-foreground = ${colors.disabled}
 
+[module/xkeyboard]
+type = internal/xkeyboard
+blacklist-0 = num lock
+
+label-layout = %layout%
+label-layout-foreground = ${colors.primary}
+
+label-indicator-padding = 2
+label-indicator-margin = 1
+label-indicator-foreground = ${colors.background}
+label-indicator-background = ${colors.secondary}
+
+[module/memory]
+type = internal/memory
+interval = 2
+format-prefix = "RAM "
+format-prefix-foreground = ${colors.primary}
+label = %percentage_used:2%%
+
+[module/cpu]
+type = internal/cpu
+interval = 2
+format-prefix = "CPU "
+format-prefix-foreground = ${colors.primary}
+label = %percentage:2%%
+
+[network-base]
+type = internal/network
 interval = 5
+format-connected = <label-connected>
+format-disconnected = <label-disconnected>
+label-disconnected = %{F#F0C674}%ifname%%{F#707880} disconnected
+
+[module/wlan]
+inherit = network-base
+interface-type = wireless
+label-connected = %{F#F0C674}%ifname%%{F-} %essid% %local_ip%
+
+[module/eth]
+inherit = network-base
+interface-type = wired
+label-connected = %{F#F0C674}%ifname%%{F-} %local_ip%
+
+[module/date]
+type = internal/date
+interval = 1
+
+date = %H:%M
+date-alt = %Y-%m-%d %H:%M:%S
+
+label = %date%
+label-foreground = ${colors.primary}
+
+[settings]
+screenchange-reload = true
+pseudo-transparency = true
+
+; vim:ft=dosini
+
+

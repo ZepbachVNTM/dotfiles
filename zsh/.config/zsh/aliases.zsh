@@ -3,13 +3,10 @@ alias j="z"
 alias f="zi"
 alias lz="lazygit"
 alias nvimrc='nvim ~/.config/nvim/'
+alias win="sudo efibootmgr --bootnext 0000 && reboot"
 
-if [ $EDITOR='lvim' ]; then
-  alias nv="lvim"
-	alias lv="lvim"
-else
-  alias nv="nvim"
-fi
+alias nv="nvim"
+alias lv="lvim"
 
 if [ $(command -v live-server) ]; then
 	alias live="live-server"
