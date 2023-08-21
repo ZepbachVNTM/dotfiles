@@ -1,8 +1,8 @@
 xterm*selectToClipboard: true
 xterm*disallowedWindowOps: 20,21,SetXProp
-*.font:	FiraCode Nerd Font Mono:pixelsize=25:antialias=true:autohint=true;
+*.font:	FiraCode Nerd Font:pixelsize=25:antialias=true:autohint=true;
 *.fontalt0:JoyPixels:pixelsize=24:antialias=true:autohint=true;
-! *.fontalt1:FiraCode Nerd Font:pixelsize=24:antialias=true:autohint=true;
+*.fontalt1:FiraCode Nerd Font:pixelsize=20:antialias=true:autohint=true;
 *.alpha: 0.90
 
 ! colors
