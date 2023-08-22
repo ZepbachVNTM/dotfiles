@@ -1,6 +1,0 @@
-require('core.commet')
-require('core.whichkey').config()
-require('core.colorizer')
-require('core.telescope')
-require('core.project')
-require('core.treesitter')

@@ -1,0 +1,103 @@
+# Colors (One Darker)
+# Note I am using alacritty-ligatures until ligatures make it upstream
+colors:
+  # Default colors
+  primary:
+    # background: "#232731"
+    background: '#011627'
+    foreground: '#D6DEEB'
+
+  # Normal colors
+  # Nord
+  normal:
+    black: '#011627'
+    red: '#EF5350'
+    green: '#22DA6E'
+    yellow: '#c5e478'
+    blue: '#82AAFF'
+    magenta: '#C792EA'
+    cyan: '#21C7A8'
+    white: '#FFFFFF'
+
+  # Bright colors
+  bright:
+    black: '#575656'
+    red: '#EF5350'
+    green: '#22DA6E'
+    yellow: '#FFEB95'
+    blue: '#82AAFF'
+    magenta: '#C792EA'
+    cyan: '#7FDBCA'
+    white: '#D8DEE9'
+
+  # Change cursor colors
+  cursor:
+    text: '#1d3b53'
+    cursor: '#80a4c2'
+
+cursor:
+  style:
+    blinking: Never
+
+font:
+  # The normal (roman) font face to use.
+  normal:
+    family: JetBrainsMono Nerd Font 
+    # Style can be specified to pick a specific face.
+    style: Regular
+
+  # The bold font face
+  bold:
+    family: JetBrainsMono Nerd Font 
+    # Style can be specified to pick a specific face.
+    style: Bold
+
+  # The italic font face
+  italic:
+    family: JetBrainsMono Nerd Font 
+    # Style can be specified to pick a specific face.
+    style: Italic
+
+  size: 16.0
+
+  ligatures: true
+
+  offset:
+    x: 0
+    y: 0
+  glyph_offset:
+    x: 0
+    y: 0
+window:
+  padding:
+    x: 2
+    y: 2
+  # scrolling:
+  #   # Maximum number of lines in the scrollback buffer.
+  #   # Specifying '0' will disable scrolling.
+  history: 10000
+  #   # Number of lines the viewport will move for every line scrolled when
+  #   # scrollback is enabled (history > 0).
+  #   multiplier: 10
+
+  opacity: 0.8
+
+  # Allow terminal applications to change Alacritty's window title.
+  dynamic_title: true
+
+  # # If `true`, bold text is drawn using the bright color variants.
+  # draw_bold_text_with_bright_colors: true
+
+  # selection:
+  semantic_escape_chars: ',│`|:"'' ()[]{}<>'
+  save_to_clipboard: true
+  live_config_reload: true
+key_bindings:
+  - { key: V, mods: Control|Shift, action: Paste }
+  - { key: C, mods: Control|Shift, action: Copy }
+  - { key: Key0, mods: Control, action: ResetFontSize }
+  - { key: Equals, mods: Control, action: IncreaseFontSize }
+  - { key: Minus, mods: Control, action: DecreaseFontSize }
+  # - { key: Add, mods: Control, action: IncreaseFontSize }
+  # - { key: Subtract, mods: Control, action: DecreaseFontSize }
+  # - { key: N, mods: Control, action: SpawnNewInstance }
