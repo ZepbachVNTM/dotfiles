@@ -12,7 +12,6 @@
     "tray",
     "custom/updates",
     "custom/language",
-    "custom/notification",
     "pulseaudio",
     "pulseaudio#microphone"
   ],
