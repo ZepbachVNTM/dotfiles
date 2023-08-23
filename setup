@@ -1,0 +1,23 @@
+#!/bin/bash
+
+font="noto-fonts-cjk noto-fonts-emoji noto-fonts ttf-jetbrains-mono-nerd"
+
+PS3="Enter a number: "
+options=("Base package","Install paru")
+
+select opt in "${options[@]}"
+do
+    case $opt in
+        "paru")
+            if ()
+            git clone
+            ;;
+        *) echo "Cut"
+    esac
+done
+
+# if [ $(command -v paru) ]; then
+#   paru -Sy $font
+# else
+#   echo "Please install Paru first!"
+# fi
