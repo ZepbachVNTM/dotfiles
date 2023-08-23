@@ -1,19 +1,31 @@
 #!/bin/bash
 
-font="noto-fonts-cjk noto-fonts-emoji noto-fonts ttf-jetbrains-mono-nerd"
+font="noto-fonts-cjk noto-fonts-emoji noto-fonts ttf-jetbrains-mono-nerd ttf-roboto-mono-nerd ttf-roboto-mono"
 
 PS3="Enter a number: "
-options=("Base package","Install paru")
+options=("Install Paru" "Install Fonts")
 
 select opt in "${options[@]}"
 do
-    case $opt in
-        "paru")
-            if ()
-            git clone
-            ;;
-        *) echo "Cut"
-    esac
+  clear
+  case $opt in
+    "Install Paru")
+      if [ $(command -v git) ]; then
+        git clone https://aur.archlinux.org/paru.git $HOME/.cache/paru-git
+        cd $HOME/.cache/paru-git
+        makepkg -si
+        rm -rf $HOME/.cache/paru-git/
+      else
+        echo "Please install Git first!"
+      fi
+      ;;
+    "Install Fonts")
+      paru -S $font
+      ;;
+    *) echo "Wrong option!"
+  esac
+
+  read -p "Press Enter to continue..."
 done
 
 # if [ $(command -v paru) ]; then
