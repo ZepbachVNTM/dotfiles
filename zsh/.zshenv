@@ -11,3 +11,4 @@ export SDL_IM_MODULE='fcitx'
 export XMODIFIERS='@im=fcitx'
 
 export BROWSER="firefox"
+export VISUAL="nvim"
