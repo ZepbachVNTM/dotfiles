@@ -6,6 +6,7 @@ alias nvimrc='nvim ~/.config/nvim/'
 alias win="sudo efibootmgr --bootnext 0000 && reboot"
 
 alias nv="nvim"
+alias nvd="neovide"
 alias lv="lvim"
 
 if [ $(command -v live-server) ]; then

@@ -73,3 +73,10 @@ sudo apt-get install xclip
 ```bash
 pacman -S xclip
 ```
+
+# St Config using siduck/st
+
+```bash
+git clone git@github.com:siduck/st.git
+
+```
