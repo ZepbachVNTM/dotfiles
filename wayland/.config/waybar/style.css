@@ -51,7 +51,6 @@ tooltip {
 #custom-language,
 #custom-updates,
 #custom-caffeine,
-#custom-weather,
 #custom-notification,
 #window,
 #clock,
@@ -94,13 +93,6 @@ tooltip {
   border-right: 0px;
 }
 
-#custom-updates {
-  color: #f5c2e7;
-  border-radius: 10px 0px 0px 10px;
-  border-left: 0px;
-  border-right: 0px;
-}
-
 #window {
   border-radius: 10px;
   margin-left: 60px;
@@ -109,7 +101,7 @@ tooltip {
 
 #clock {
   color: #fab387;
-  border-radius: 10px 0px 0px 10px;
+  border-radius: 10px 10px 10px 10px;
   margin-left: 5px;
   border-right: 0px;
 }
@@ -141,11 +133,9 @@ tooltip {
   border-left: 0px;
 }
 
-#custom-weather {
-  border-radius: 0px 10px 10px 0px;
+#custom-updates {
+  color: #f5c2e7;
+  border-radius: 10px 0px 0px 10px;
+  border-left: 0px;
   border-right: 0px;
-  margin-left: 0px;
-}
-
-#custom-notification {
 }
