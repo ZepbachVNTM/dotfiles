@@ -9,11 +9,11 @@
 
 window#waybar {
   background: rgba(21, 18, 27, 0);
-  color: #cdd6f4;
+  color: #a9b1d6;
 }
 
 tooltip {
-  background: #1e1e2e;
+  background: #1a1b26;
   border-radius: 10px;
   border-width: 2px;
   border-style: solid;
@@ -22,7 +22,7 @@ tooltip {
 
 #workspaces button {
   padding: 5px;
-  color: #313244;
+  color: #32344a;
   margin-right: 5px;
 }
 
@@ -100,7 +100,7 @@ tooltip {
 }
 
 #clock {
-  color: #fab387;
+  color: #e0af68;
   border-radius: 10px 10px 10px 10px;
   margin-left: 5px;
   border-right: 0px;
