@@ -1,9 +1,10 @@
 #!/bin/bash
 
 font="noto-fonts-cjk noto-fonts-emoji noto-fonts ttf-jetbrains-mono-nerd ttf-roboto-mono-nerd ttf-roboto-mono"
+package="neovim-nightly-bin neovide emacs kde-gtk-config"
 
 PS3="Enter a number: "
-options=("Install Paru" "Install Fonts")
+options=("Install Paru" "Install Fonts" "Install Package")
 
 select opt in "${options[@]}"
 do
@@ -22,6 +23,8 @@ do
     "Install Fonts")
       paru -S $font
       ;;
+    "Install Package")
+      paru -S $package
     *) echo "Wrong option!"
   esac
 

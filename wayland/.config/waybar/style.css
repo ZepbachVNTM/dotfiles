@@ -1,7 +1,7 @@
 * {
   border: none;
   border-radius: 0;
-  font-family: FiraCode Nerd Font, monospace;
+  font-family: JetBrainsMono Nerd Font, monospace;
   font-weight: bold;
   font-size: 14px;
   min-height: 0;
@@ -64,7 +64,7 @@ tooltip {
   padding: 0px 10px;
   margin: 3px 0px;
   margin-top: 10px;
-  border: 1px solid #181825;
+  border: 2px solid #7aa2f7;
 }
 
 #tray {
@@ -78,6 +78,7 @@ tooltip {
   margin-left: 10px;
   padding-right: 0px;
   padding-left: 5px;
+  border: 2px solid #7aa2f7;
 }
 
 #custom-caffeine {
@@ -104,6 +105,7 @@ tooltip {
   border-radius: 10px 10px 10px 10px;
   margin-left: 5px;
   border-right: 0px;
+  border: 2px solid #7aa2f7;
 }
 
 #network {
@@ -116,13 +118,14 @@ tooltip {
   color: #89b4fa;
   border-left: 0px;
   border-right: 0px;
+  border: 2px solid #7aa2f7;
+  border-left: none;
 }
 
 #pulseaudio.microphone {
   color: #cba6f7;
   border-radius: 0px 10px 10px 0px;
   border-left: 0px;
-  border-right: 0px;
   margin-right: 5px;
 }
 
@@ -136,6 +139,5 @@ tooltip {
 #custom-updates {
   color: #f5c2e7;
   border-radius: 10px 0px 0px 10px;
-  border-left: 0px;
   border-right: 0px;
 }

@@ -8,6 +8,8 @@ alias win="sudo efibootmgr --bootnext 0000 && reboot"
 alias nv="nvim"
 alias nvd="neovide"
 alias lv="lvim"
+# alias emacs="emacsclient -c -a emacs"
+alias scrrec="wf-recorder --audio -F fps=30 --file=$HOME/Videos/$(date +'%Y-%m-%d-%T')-rec.mp4"
 
 if [ $(command -v live-server) ]; then
 	alias live="live-server"
@@ -51,3 +53,7 @@ if command -v exa &> /dev/null; then
   alias ll="exa --icons -la --group-directories-first"
   alias la="exa --icons -a --group-directories-first"
 fi
+
+# Cloudflare WARP
+alias warpcn="warp-cli connect"
+alias warpdcn="warp-cli disconnect"
