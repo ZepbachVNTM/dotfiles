@@ -10,10 +10,7 @@ alias nvd="neovide"
 alias lv="lvim"
 # alias emacs="emacsclient -c -a emacs"
 alias scrrec="wf-recorder --audio -F fps=30 --file=$HOME/Videos/$(date +'%Y-%m-%d-%T')-rec.mp4"
-
-if [ $(command -v live-server) ]; then
-	alias live="live-server"
-fi
+alias live="live-server"
 
 # Colorize grep output (good for log files)
 alias grep='grep --color=auto'
@@ -37,15 +34,6 @@ alias psmem='ps auxf | sort -nr -k 4 | head -5'
 # get top process eating cpu ##
 alias pscpu='ps auxf | sort -nr -k 3 | head -5'
 
-# gpg encryption
-# verify signature for isos
-alias gpg-check="gpg2 --keyserver-options auto-key-retrieve --verify"
-# receive the key of a developer
-alias gpg-retrieve="gpg2 --keyserver-options auto-key-retrieve --receive-keys"
-
-# For when keys break
-alias archlinx-fix-keys="sudo pacman-key --init && sudo pacman-key --populate archlinux && sudo pacman-key --refresh-keys"
-
 # systemd
 alias mach_list_systemctl="systemctl list-unit-files --state=enabled"
 
@@ -56,4 +44,4 @@ fi
 
 # Cloudflare WARP
 alias warpcn="warp-cli connect"
-alias warpdcn="warp-cli disconnect"
+alias warpdc="warp-cli disconnect"
