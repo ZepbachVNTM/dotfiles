@@ -12,3 +12,6 @@ export XMODIFIERS='@im=fcitx'
 
 export BROWSER="firefox"
 export VISUAL="nvim"
+
+# bun completions
+[ -s "/home/akatsuki/.bun/_bun" ] && source "/home/akatsuki/.bun/_bun"

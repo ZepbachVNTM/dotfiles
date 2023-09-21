@@ -11,6 +11,7 @@ alias lv="lvim"
 # alias emacs="emacsclient -c -a emacs"
 alias scrrec="wf-recorder --audio -F fps=30 --file=$HOME/Videos/$(date +'%Y-%m-%d-%T')-rec.mp4"
 alias live="live-server"
+alias tmux="tmux attach || tmux new"
 
 # Colorize grep output (good for log files)
 alias grep='grep --color=auto'
