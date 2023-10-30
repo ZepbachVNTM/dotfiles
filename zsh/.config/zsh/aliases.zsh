@@ -38,9 +38,9 @@ alias pscpu='ps auxf | sort -nr -k 3 | head -5'
 # systemd
 alias mach_list_systemctl="systemctl list-unit-files --state=enabled"
 
-if command -v exa &> /dev/null; then
-  alias ll="exa --icons -la --group-directories-first"
-  alias la="exa --icons -a --group-directories-first"
+if (("$+commands[eza]")); then
+  alias ll="eza --icons -la --group-directories-first"
+  alias la="eza --icons -a --group-directories-first"
 fi
 
 # Cloudflare WARP
