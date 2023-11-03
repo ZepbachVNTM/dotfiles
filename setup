@@ -3,7 +3,7 @@
 clear
 
 font="noto-fonts-cjk noto-fonts-emoji noto-fonts ttf-jetbrains-mono-nerd ttf-roboto-mono-nerd ttf-roboto-mono"
-package="neovim-nightly-bin ripgrep fzf zoxide lazygit eza zsh ibus ibus-bamboo ranger hyprshot swaybg hyprland sddm pamixer"
+package="neovim-nightly-bin ripgrep fzf zoxide lazygit eza zsh ibus ibus-bamboo ranger hyprshot swaybg hyprland sddm pamixer gd"
 applications="firefox google-chrome visual-studio-code-bin neovide discord spotify spicetify"
 
 PS3="Enter a number: "
@@ -37,6 +37,7 @@ do
       ;;
     "Setup")
       sudo systemctl enable sddm
+      ;;
     "Quit")
       break
       ;;
