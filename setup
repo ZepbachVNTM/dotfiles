@@ -3,11 +3,11 @@
 clear
 
 font="noto-fonts-cjk noto-fonts-emoji noto-fonts ttf-jetbrains-mono-nerd ttf-roboto-mono-nerd ttf-roboto-mono"
-package="neovim-nightly-bin ripgrep fzf zoxide lazygit eza zsh ibus ibus-bamboo ranger"
-applications="firefox google-chrome visual-studio-code-bin neovide"
+package="neovim-nightly-bin ripgrep fzf zoxide lazygit eza zsh ibus ibus-bamboo ranger hyprshot swaybg hyprland sddm pamixer"
+applications="firefox google-chrome visual-studio-code-bin neovide discord spotify spicetify"
 
 PS3="Enter a number: "
-options=("Install Paru" "Install Fonts" "Install Package" "Install ZAP" "Install Applications" "Quit")
+options=("Install Paru" "Install Fonts" "Install Package" "Install ZAP" "Install Applications" "Setup" "Quit")
 
 select opt in "${options[@]}"
 do
@@ -35,6 +35,8 @@ do
     "Install Applications")
       paru -S $applications
       ;;
+    "Setup")
+      sudo systemctl enable sddm
     "Quit")
       break
       ;;
