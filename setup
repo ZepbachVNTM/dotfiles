@@ -4,7 +4,7 @@ clear
 
 font="noto-fonts-cjk noto-fonts-emoji noto-fonts ttf-jetbrains-mono-nerd ttf-roboto-mono-nerd ttf-roboto-mono"
 package="neovim-nightly-bin ripgrep fzf zoxide lazygit eza zsh ibus ibus-bamboo ranger hyprshot swaybg hyprland sddm pamixer gd"
-applications="firefox google-chrome visual-studio-code-bin neovide discord spotify spicetify"
+applications="firefox google-chrome visual-studio-code-bin neovide discord spotify spicetify-cli"
 
 PS3="Enter a number: "
 options=("Install Paru" "Install Fonts" "Install Package" "Install ZAP" "Install Applications" "Setup" "Quit")
@@ -29,7 +29,7 @@ do
     "Install Package")
       paru -S $package
       ;;
-    "Install zap")
+    "Install ZAP")
       zsh <(curl -s https://raw.githubusercontent.com/zap-zsh/zap/master/install.zsh) -k
       ;;
     "Install Applications")
