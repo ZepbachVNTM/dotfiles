@@ -1,10 +1,13 @@
 #!/bin/bash
 
+clear
+
 font="noto-fonts-cjk noto-fonts-emoji noto-fonts ttf-jetbrains-mono-nerd ttf-roboto-mono-nerd ttf-roboto-mono"
-package="neovim-nightly-bin neovide emacs kde-gtk-config"
+package="neovim-nightly-bin ripgrep fzf zoxide lazygit eza zsh ibus ibus-bamboo ranger"
+applications="firefox google-chrome visual-studio-code-bin neovide"
 
 PS3="Enter a number: "
-options=("Install Paru" "Install Fonts" "Install Package")
+options=("Install Paru" "Install Fonts" "Install Package" "Install ZAP" "Install Applications" "Quit")
 
 select opt in "${options[@]}"
 do
@@ -25,14 +28,19 @@ do
       ;;
     "Install Package")
       paru -S $package
+      ;;
+    "Install zap")
+      zsh <(curl -s https://raw.githubusercontent.com/zap-zsh/zap/master/install.zsh) -k
+      ;;
+    "Install Applications")
+      paru -S $applications
+      ;;
+    "Quit")
+      break
+      ;;
     *) echo "Wrong option!"
   esac
 
   read -p "Press Enter to continue..."
+  clear
 done
-
-# if [ $(command -v paru) ]; then
-#   paru -Sy $font
-# else
-#   echo "Please install Paru first!"
-# fi
