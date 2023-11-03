@@ -7,7 +7,7 @@
   "gtk-layer-shell": true,
   "height": 0,
   "modules-left": ["clock", "hyprland/workspaces"],
-  "modules-center": ["hyprland/window"],
+  "modules-center": ["wlr/window"],
   "modules-right": [
     "tray",
     "custom/updates",
@@ -17,10 +17,10 @@
   "hyprland/window": {
     "format": "{}"
   },
-  "hyprland/workspaces": {
+  "wlr/workspaces": {
     "disable-scroll": true,
-    "all-outputs": true,
-    "on-click": "activate",
+    "all-outputs": false,
+    //"on-click": "activate",
     //"format": "{icon}",
     "persistent_workspaces": {
       "1": [],
