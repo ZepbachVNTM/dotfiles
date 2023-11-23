@@ -1,6 +1,6 @@
 xterm*selectToClipboard: true
 xterm*disallowedWindowOps: 19,20,SetXProp
-*.font:	JetBrainsMono Nerd Font:pixelsize=19:antialias=true:autohint=true;
+*.font:	JetBrainsMono NF:pixelsize=19:antialias=true:autohint=true;
 *.fontalt0:JoyPixels:pixelsize=20:antialias=true:autohint=true;
 ! *.fontalt1:FiraCode Nerd Font:pixelsize=20:antialias=true:autohint=true;
 *.alpha: 0.90
