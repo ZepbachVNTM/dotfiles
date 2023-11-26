@@ -72,6 +72,16 @@ prompt {
     background-color:            @active;
     text-color:                  @background;
 }
+entry {
+    enabled:                     true;
+    cursor:                      text;
+    placeholder:                 "Search...";
+    placeholder-color:           #CAD3F5;
+    background-color:            #181926;
+    text-color:                  #CAD3F5;
+    padding:                     10px;
+    border-radius:               10px;
+}
 
 /*****----- Message -----*****/
 message {
@@ -101,17 +111,6 @@ error-message {
     background-color:            @background;
     text-color:                  @foreground;
 }
-entry {
-    enabled:                     true;
-    cursor:                      text;
-    placeholder:                 "Search...";
-    placeholder-color:           #CAD3F5;
-    background-color:            #181926;
-    text-color:                  #CAD3F5;
-    padding:                     10px;
-    border-radius:               10px;
-}
-
 
 /*****----- Listview -----*****/
 listview {
