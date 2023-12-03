@@ -3,7 +3,7 @@
 clear
 
 font="noto-fonts-cjk noto-fonts-emoji noto-fonts ttf-jetbrains-mono-nerd ttf-roboto-mono-nerd ttf-roboto-mono"
-package="neovim-nightly-bin ripgrep fzf zoxide lazygit eza zsh ibus ibus-bamboo ranger hyprshot swaybg hyprland sddm pamixer gd rofi-emoji xdotool"
+package="neovim-nightly-bin ripgrep fzf zoxide lazygit eza zsh ibus ibus-bamboo ranger hyprshot swaybg hyprland sddm pamixer gd rofi-emoji xdotool pacman-contrib trizen"
 applications="firefox google-chrome visual-studio-code-bin neovide discord spotify spicetify-cli"
 
 PS3="Enter a number: "
