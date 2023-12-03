@@ -1,14 +1,16 @@
 * {
   border: none;
   border-radius: 0;
-  font-family: JetBrainsMono Nerd Font, monospace;
+  font-family:
+    JetBrainsMono NF,
+    monospace;
   font-weight: bold;
   font-size: 14px;
   min-height: 0;
 }
 
-window#waybar {
-  background: rgba(21, 18, 27, 0);
+#waybar {
+  background: rgba(26, 27, 38, 0.6);
   color: #a9b1d6;
 }
 
@@ -27,7 +29,7 @@ tooltip {
 }
 
 #workspaces button.active {
-  color: #a6adc8;
+  color: #7aa2f7;
 }
 
 #workspaces button.focused {
@@ -60,11 +62,9 @@ tooltip {
 #workspaces,
 #tray,
 #backlight {
-  background: #1e1e2e;
+  background: #24283b;
   padding: 0px 10px;
-  margin: 3px 0px;
-  margin-top: 10px;
-  border: 2px solid #7aa2f7;
+  margin: 4px 0px;
 }
 
 #tray {
@@ -73,8 +73,8 @@ tooltip {
 }
 
 #workspaces {
-  background: #1e1e2e;
-  border-radius: 10px;
+  background: #24283b;
+  border-radius: 20px;
   margin-left: 10px;
   padding-right: 0px;
   padding-left: 5px;
@@ -95,9 +95,10 @@ tooltip {
 }
 
 #window {
-  border-radius: 10px;
+  border-radius: 20px;
   margin-left: 60px;
   margin-right: 60px;
+  border: 2px solid #bb9af7;
 }
 
 #clock {
@@ -105,7 +106,6 @@ tooltip {
   border-radius: 10px 10px 10px 10px;
   margin-left: 5px;
   border-right: 0px;
-  border: 2px solid #7aa2f7;
 }
 
 #network {
@@ -116,10 +116,7 @@ tooltip {
 
 #pulseaudio {
   color: #89b4fa;
-  border-left: 0px;
-  border-right: 0px;
-  border: 2px solid #7aa2f7;
-  border-left: none;
+  border-radius: 10px 0px 0px 10px;
 }
 
 #pulseaudio.microphone {
@@ -138,6 +135,7 @@ tooltip {
 
 #custom-updates {
   color: #f5c2e7;
-  border-radius: 10px 0px 0px 10px;
+  border-radius: 10px;
+  margin-right: 10px;
   border-right: 0px;
 }
