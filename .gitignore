@@ -1,7 +1,9 @@
 plugins/
 zsh/.config/zsh/.zcompdump
-zsh/.config/zsh/.zcompdump
 zsh/.config/zsh/.zsh_history
 mpd/.config/mpd/mpd.db
 mpd/.config/mpd/mpdstate
 ncmpcpp/.config/ncmpcpp/error.log
+mpd/.config/mpd/playlists
+ncmpcpp/.config/ncmpcpp/lyrics
+scripts/.local/bin/console-ninja

@@ -2,6 +2,7 @@
 alias j="z"
 alias f="zi"
 alias lz="lazygit"
+alias lzd="lazydocker"
 alias nvimrc='nvim ~/.config/nvim/'
 alias win="sudo efibootmgr --bootnext 0000 && reboot"
 
