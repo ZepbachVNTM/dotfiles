@@ -10,7 +10,7 @@ alias nv="nvim"
 alias nvd="neovide"
 alias lv="lvim"
 # alias emacs="emacsclient -c -a emacs"
-alias scrrec="wf-recorder --audio -F fps=30 --file=$HOME/Videos/$(date +'%Y-%m-%d-%T')-rec.mp4"
+alias scrrec="wf-recorder -a -F fps=30 --file=$HOME/Videos/$(date +'%Y-%m-%d-%T')-rec.mp4"
 alias live="live-server"
 alias tmux="tmux attach || tmux new"
 
