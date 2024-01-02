@@ -6,8 +6,8 @@ xterm*disallowedWindowOps: 21,22,SetXProp
 *.alpha: 0.90
 
 ! special
-*.foreground:   #a9b1d6
-*.background:   #1a1b26
+*.foreground:   #ead2d3 
+*.background:   #080717
 *.cursorColor:  #ECEFF4
 *.revCursorColor:  #555555
 

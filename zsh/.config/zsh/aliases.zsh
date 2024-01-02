@@ -5,6 +5,7 @@ alias lz="lazygit"
 alias lzd="lazydocker"
 alias nvimrc='nvim ~/.config/nvim/'
 alias win="sudo efibootmgr --bootnext 0000 && reboot"
+alias dl="aria2c -x 12 -s 12"
 
 alias nv="nvim"
 alias nvd="neovide"

@@ -7,3 +7,6 @@ ncmpcpp/.config/ncmpcpp/error.log
 mpd/.config/mpd/playlists
 ncmpcpp/.config/ncmpcpp/lyrics
 scripts/.local/bin/console-ninja
+scripts/.local/bin/wal
+scripts/.local/bin/uvicorn
+spicetify/.config/spicetify/config-xpui.ini
