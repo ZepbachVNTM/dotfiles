@@ -3,8 +3,8 @@
 clear
 
 font="noto-fonts-cjk noto-fonts-emoji noto-fonts ttf-jetbrains-mono-nerd ttf-roboto-mono-nerd ttf-roboto-mono"
-package="neovim-nightly-bin ripgrep fzf zoxide lazygit eza zsh ibus ibus-bamboo ranger hyprshot swaybg hyprland sddm pamixer gd rofi-emoji xdotool pacman-contrib trizen ueberzugpp python-pip cliphist unzip"
-applications="firefox google-chrome visual-studio-code-bin neovide discord spotify spicetify-cli"
+package="neovim-nightly-bin ripgrep fzf zoxide lazygit eza zsh ranger hyprshot swaybg hyprland sddm pamixer gd rofi-emoji xdotool ueberzugpp python-pip cliphist unzip"
+applications="google-chrome visual-studio-code-bin neovide discord spotify spicetify-cli"
 
 PS3="Enter a number: "
 options=("Install Paru" "Install Fonts" "Install Package" "Install ZAP" "Install Applications" "Setup" "Quit")

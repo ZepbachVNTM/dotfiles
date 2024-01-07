@@ -10,3 +10,4 @@ scripts/.local/bin/console-ninja
 scripts/.local/bin/wal
 scripts/.local/bin/uvicorn
 spicetify/.config/spicetify/config-xpui.ini
+scripts/.local/bin/lvim
