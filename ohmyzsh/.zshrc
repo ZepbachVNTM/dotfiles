@@ -13,6 +13,7 @@ source $ZSH/oh-my-zsh.sh
 export VISUAL=nvim
 export BUN_INSTALL="$HOME/.bun"
 export PATH="$BUN_INSTALL/bin:$PATH"
+export PATH="$HOME/.local/bin:$PATH"
 
 source /usr/share/nvm/init-nvm.sh
 
@@ -22,9 +23,13 @@ if (("$+commands[eza]")); then
   alias la="eza --icons -a --group-directories-first"
 fi
 alias nv="nvim"
+alias nvd="neovide"
 alias lz="lazygit"
 alias lzd="lazydocker"
-
+alias live="live-server"
 
 # bun completions
 [ -s "/home/akatsuki/.bun/_bun" ] && source "/home/akatsuki/.bun/_bun"
+
+# To customize prompt, run `p10k configure` or edit ~/dotfiles/ohmyzsh/.p10k.zsh.
+[[ ! -f ~/dotfiles/ohmyzsh/.p10k.zsh ]] || source ~/dotfiles/ohmyzsh/.p10k.zsh
