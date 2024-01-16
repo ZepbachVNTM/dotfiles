@@ -27,6 +27,7 @@ alias nvd="neovide"
 alias lz="lazygit"
 alias lzd="lazydocker"
 alias live="live-server"
+alias scrrec="wf-recorder -a -F fps=30 --file=$HOME/Videos/$(date +'%Y-%m-%d-%T')-rec.mp4"
 
 # bun completions
 [ -s "/home/akatsuki/.bun/_bun" ] && source "/home/akatsuki/.bun/_bun"
