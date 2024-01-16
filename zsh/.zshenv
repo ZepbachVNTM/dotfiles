@@ -7,6 +7,3 @@ export XDG_DATA_HOME=$HOME/.local/share
 
 export BROWSER="firefox"
 export VISUAL="nvim"
-
-# bun completions
-[ -s "/home/akatsuki/.bun/_bun" ] && source "/home/akatsuki/.bun/_bun"

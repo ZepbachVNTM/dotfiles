@@ -10,4 +10,8 @@ export PATH="$BUN_INSTALL/bin:$PATH"
 
 # eval "`pip completion --zsh`"
 eval "$(zoxide init zsh)"
-source /usr/share/nvm/init-nvm.sh
+export PATH="/home/akatsuki/.local/share/fnm:$PATH"
+eval "`fnm env`"
+
+# bun completions
+[ -s "/home/akatsuki/.bun/_bun" ] && source "/home/akatsuki/.bun/_bun"

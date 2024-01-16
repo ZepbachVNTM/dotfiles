@@ -16,16 +16,20 @@ plug "zsh-users/zsh-syntax-highlighting"
 plug "hlissner/zsh-autopair"
 plug "zap-zsh/supercharge"
 plug "zap-zsh/vim"
-# plug "zap-zsh/zap-prompt"
+plug "zap-zsh/sudo"
 plug "zap-zsh/fzf"
 plug "zap-zsh/exa"
-plug "hd929/web-search"
+plug "zap-zsh/web-search"
+plug "MichaelAquilina/zsh-you-should-use"
+plug "kutsan/zsh-system-clipboard"
+plug "chivalryq/git-alias"
+
+# plug "zap-zsh/zap-prompt"
 plug "romkatv/powerlevel10k"
 
 # source
 plug "$HOME/.config/zsh/aliases.zsh"
 plug "$HOME/.config/zsh/exports.zsh"
-plug "$HOME/.config/zsh/customs/git.alias.zsh"
 
 # keybinds
 bindkey '^ ' autosuggest-accept
