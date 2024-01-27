@@ -20,7 +20,6 @@ plug "zap-zsh/sudo"
 plug "zap-zsh/fzf"
 plug "zap-zsh/exa"
 plug "zap-zsh/web-search"
-plug "MichaelAquilina/zsh-you-should-use"
 plug "kutsan/zsh-system-clipboard"
 plug "chivalryq/git-alias"
 
@@ -33,8 +32,6 @@ plug "$HOME/.config/zsh/exports.zsh"
 
 # keybinds
 bindkey '^ ' autosuggest-accept
-
-export PATH=$HOME/.local/bin:$HOME/.config/composer/vendor/bin:/usr/local/bin:$HOME/.npm-global/bin:$PATH
 
 if command -v bat &> /dev/null; then
   alias cat="bat -pp --theme \"Visual Studio Dark+\"" 
