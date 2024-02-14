@@ -12,6 +12,7 @@ New-Alias f zi
 New-Alias ll Get-ChildItem
 New-Alias ls Get-ChildItem-Wide
 New-Alias nv nvim
+New-Alias nvd neovide
 New-Alias lv lvim
 New-Alias open ii
 New-Alias grep findstr
