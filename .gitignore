@@ -12,3 +12,4 @@ scripts/.local/bin/uvicorn
 spicetify/.config/spicetify/config-xpui.ini
 scripts/.local/bin/lvim
 scripts/.local/bin/mise
+zsh/.config/spicetify
