@@ -1,0 +1,86 @@
+[colors.bright]
+black = "#575656"
+blue = "#82AAFF"
+cyan = "#7FDBCA"
+green = "#22DA6E"
+magenta = "#C792EA"
+red = "#EF5350"
+white = "#D8DEE9"
+yellow = "#FFEB95"
+
+[colors.cursor]
+cursor = "#80a4c2"
+text = "#1d3b53"
+
+[colors.normal]
+black = "#011627"
+blue = "#82AAFF"
+cyan = "#21C7A8"
+green = "#22DA6E"
+magenta = "#C792EA"
+red = "#EF5350"
+white = "#FFFFFF"
+yellow = "#c5e478"
+
+[colors.primary]
+background = "#011627"
+foreground = "#D6DEEB"
+
+[cursor.style]
+blinking = "Never"
+
+[font]
+size = 16.0
+
+[font.bold]
+family = "JetBrainsMono Nerd Font"
+style = "Bold"
+
+[font.glyph_offset]
+x = 0
+y = 0
+
+[font.italic]
+family = "JetBrainsMono Nerd Font"
+style = "Italic"
+
+[font.normal]
+family = "JetBrainsMono Nerd Font"
+style = "Regular"
+
+[font.offset]
+x = 0
+y = 0
+
+[[keyboard.bindings]]
+action = "Paste"
+key = "V"
+mods = "Control|Shift"
+
+[[keyboard.bindings]]
+action = "Copy"
+key = "C"
+mods = "Control|Shift"
+
+[[keyboard.bindings]]
+action = "ResetFontSize"
+key = "Key0"
+mods = "Control"
+
+[[keyboard.bindings]]
+action = "IncreaseFontSize"
+key = "Equals"
+mods = "Control"
+
+[[keyboard.bindings]]
+action = "DecreaseFontSize"
+key = "Minus"
+mods = "Control"
+
+[window]
+dynamic_title = true
+opacity = 0.8
+
+[window.padding]
+x = 2
+y = 2
