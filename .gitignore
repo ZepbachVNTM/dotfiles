@@ -13,3 +13,10 @@ spicetify/.config/spicetify/config-xpui.ini
 scripts/.local/bin/lvim
 scripts/.local/bin/mise
 zsh/.config/spicetify
+scripts/.local/bin/mid3cp
+scripts/.local/bin/mid3iconv
+scripts/.local/bin/mid3v2
+scripts/.local/bin/moggsplit
+scripts/.local/bin/mutagen-inspect
+scripts/.local/bin/mutagen-pony
+scripts/.local/bin/yt-dlp
