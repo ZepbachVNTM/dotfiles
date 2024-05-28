@@ -24,7 +24,7 @@ floating_modifier $mod
 
 # start program launcher
 # bindsym $mod+d exec --no-startup-id bash rofi -show run
-bindsym $mod+d exec --no-startup-id bash ~/.config/rofi/launchers/type-3/launcher.sh
+bindsym $mod+r exec --no-startup-id bash ~/.config/rofi/launchers/type-3/launcher.sh
 
 # change focus
 bindsym $mod+h focus left
@@ -194,7 +194,7 @@ mode "$mode_system" {
 }
 
 # Resize window (you can also use the mouse for that)
-bindsym $mod+r mode "resize"
+# bindsym $mod+r mode "resize"
 mode "resize" {
         # These bindings trigger as soon as you enter the resize mode
         # Pressing left will shrink the window’s width.
