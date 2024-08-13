@@ -1,5 +1,7 @@
 ZDOTDIR="$HOME/.config/zsh"
 
+export MPD_HOST="$HOME/.config/mpd/socket"
+
 # XDG Paths
 export XDG_CONFIG_HOME=$HOME/.config
 export XDG_CACHE_HOME=$HOME/.cache
