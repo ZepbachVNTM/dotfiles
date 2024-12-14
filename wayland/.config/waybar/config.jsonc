@@ -12,6 +12,8 @@
   ],
   "modules-right": [
     "tray",
+    "battery",
+    "custom/cliphist",
     "pulseaudio",
     "pulseaudio#microphone"
   ],
@@ -88,5 +90,32 @@
     "on-scroll-up": "pamixer --default-source -i 5",
     "on-scroll-down": "pamixer --default-source -d 5",
     "scroll-step": 5
-  }
+  },
+  "battery": {
+    "format": "{capacity}%",
+    "states": {
+      // "good": 95,
+      "warning": 30,
+      "critical": 15
+    },
+    "format": "{icon} {capacity}%",
+    "format-charging": "󰂄 {capacity}%",
+    "format-plugged": " {capacity}%",
+    "format-alt": "{icon} {time}",
+    "format-icons": [
+      " ",
+      " ",
+      " ",
+      " ",
+      " "
+    ],
+    "format-time": "{H}h {M}m",
+  },
+  "custom/cliphist": {
+    "format": "",
+    "on-click": "sleep 0.1 && ~/.config/hypr/scripts/cliphist.sh",
+    "on-click-right": "sleep 0.1 && ~/.config/hypr/scripts/cliphist.sh d",
+    "on-click-middle": "sleep 0.1 && ~/.config/hypr/scripts/cliphist.sh w",
+    "tooltip-format": "Clipboard Manager"
+  },
 }
