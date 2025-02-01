@@ -14,7 +14,5 @@ eval "$(zoxide init zsh)"
 export PATH="/home/akatsuki/.local/share/fnm:$PATH"
 eval "`fnm env`"
 
-eval "$(pyenv init -)"
-
 # bun completions
 [ -s "/home/akatsuki/.bun/_bun" ] && source "/home/akatsuki/.bun/_bun"
