@@ -25,6 +25,7 @@ plug "zap-zsh/exa"
 plug "zap-zsh/web-search"
 plug "kutsan/zsh-system-clipboard"
 plug "chivalryq/git-alias"
+plug "arzzen/calc.plugin.zsh"
 
 # plug "zap-zsh/zap-prompt"
 plug "romkatv/powerlevel10k"
